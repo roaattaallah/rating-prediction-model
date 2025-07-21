@@ -52,33 +52,8 @@ This repository implements a collaborative filtering model in C++ to predict use
 - For each user-item pair in the test set, it predicts the rating using user-based collaborative filtering.
 - The predictions are written to `predictions.csv` in the same format as `sample_submission.csv`.
 
-## Usage
-
-### 1. Compile the Code
-
-```bash
-g++ -o rating_predictor my_model_code.cpp
-```
-
-### 2. Run the Program
-
-```bash
-./rating_predictor
-```
-
-- The program expects `train.csv` and `test.csv` to be present in the same directory.
-- Output will be written to `predictions.csv`.
 
 ## Customization
 
 - The code can be modified to use item-based collaborative filtering by changing the `user_based` parameter in the `loadData` function call in `main()`.
 - You can adjust the number of neighbors (`topk`) in the `predictRating` function for different results.
-
-## Notes
-
-- The code prints out some statistics about the most active users and items.
-- Error handling is included for missing files.
-
-## License
-
-[Specify your license here] 
